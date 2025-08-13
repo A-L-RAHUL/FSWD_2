@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Judiciary Platform — Digital FIR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand"><div class="brand-badge"></div> JustiLink</div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="cases.html">Cases</a>
+        <a class="active" href="fir.html">FIR</a>
+        <a href="lawyers.html">Lawyers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title mb-12">Digital FIR</h1>
+
+    <section class="grid cols-2">
+      <div class="card">
+        <h2 class="mb-8">FIR Form (Sample)</h2>
+        <div class="row">
+          <div class="col-6">
+            <label>Reference #</label>
+            <input class="input" value="FIR-08-13-061" />
+          </div>
+          <div class="col-6">
+            <label>Station</label>
+            <input class="input" value="Kadapa City PS" />
+          </div>
+          <div class="col-6">
+            <label>Filed By</label>
+            <input class="input" value="Inspector Mehta" />
+          </div>
+          <div class="col-6">
+            <label>Incident Time</label>
+            <input class="input" value="2025-08-12 21:30" />
+          </div>
+          <div class="col-12">
+            <label>Location</label>
+            <input class="input" value="Warehouse District, Kadapa, AP" />
+          </div>
+          <div class="col-12">
+            <label>Description</label>
+            <textarea class="input" rows="5">Stolen electronics reported at warehouse; suspects fled in a white van. CCTV available.</textarea>
+          </div>
+          <div class="col-6">
+            <label>Involved Officials</label>
+            <input class="input" value="SI Mehta, Constable Rao" />
+          </div>
+          <div class="col-6">
+            <label>Status</label>
+            <select class="input">
+              <option>SUBMITTED</option>
+              <option>VERIFIED</option>
+              <option>REJECTED</option>
+              <option>LINKED_TO_CASE</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <a class="btn" href="#">Submit FIR</a>
+            <a class="btn ghost" href="#">Save Draft</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="mb-8">Recent FIRs</h2>
+        <table class="table">
+          <thead><tr><th>Ref</th><th>Filer</th><th>Time</th><th>Status</th><th>Attachments</th></tr></thead>
+        <tbody>
+          <tr><td>FIR-08-13-061</td><td>Insp. Mehta</td><td>10:00</td><td><span class="status s-open">SUBMITTED</span></td><td>2</td></tr>
+          <tr><td>FIR-08-13-060</td><td>SI Kumar</td><td>09:35</td><td><span class="status s-review">VERIFIED</span></td><td>1</td></tr>
+          <tr><td>FIR-08-13-059</td><td>Insp. K</td><td>09:20</td><td><span class="status">LINKED_TO_CASE</span></td><td>3</td></tr>
+          <tr><td>FIR-08-13-058</td><td>Const. Rao</td><td>08:55</td><td><span class="status s-closed">REJECTED</span></td><td>1</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
