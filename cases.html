@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Judiciary Platform — Cases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand"><div class="brand-badge"></div> JustiLink</div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="cases.html">Cases</a>
+        <a href="fir.html">FIR</a>
+        <a href="lawyers.html">Lawyers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title mb-12">Cases</h1>
+
+    <section class="grid cols-3 mb-16">
+      <div class="card"><h2>Open</h2><div class="kpi">74</div><div class="muted">+6 this week</div></div>
+      <div class="card"><h2>Under Review</h2><div class="kpi">36</div><div class="muted">Avg. 4 days</div></div>
+      <div class="card"><h2>In Court</h2><div class="kpi">18</div><div class="muted">Next 7 days</div></div>
+    </section>
+
+    <section class="card">
+      <h2 class="mb-8">All Cases</h2>
+      <table class="table">
+        <thead>
+          <tr><th>ID</th><th>Title</th><th>Parties</th><th>Status</th><th>Next Hearing</th><th>Tags</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>CASE-2025-1107</td><td>State vs Arun</td><td>State, Arun P.</td><td><span class="status s-review">UNDER_REVIEW</span></td><td>Aug 18</td><td><span class="tag">Theft</span> <span class="tag">CCTV</span></td></tr>
+          <tr><td>CASE-2025-1099</td><td>Priya vs Aakash</td><td>Priya S., Aakash V.</td><td><span class="status s-open">OPEN</span></td><td>—</td><td><span class="tag">Civil</span></td></tr>
+          <tr><td>CASE-2025-1094</td><td>State vs Karthik</td><td>State, Karthik R.</td><td><span class="status">IN_COURT</span></td><td>Aug 22</td><td><span class="tag">Assault</span></td></tr>
+          <tr><td>CASE-2025-1080</td><td>Ravi vs Om Logistics</td><td>Ravi K., Om Logistics</td><td><span class="status s-open">OPEN</span></td><td>Sep 02</td><td><span class="tag">Contract</span></td></tr>
+          <tr><td>CASE-2025-1072</td><td>Meera vs Atlas Bank</td><td>Meera V., Atlas Bank</td><td><span class="status s-review">UNDER_REVIEW</span></td><td>—</td><td><span class="tag">Fraud</span> <span class="tag">KYC</span></td></tr>
+          <tr><td>CASE-2025-1066</td><td>State vs Rohan</td><td>State, Rohan S.</td><td><span class="status s-closed">CLOSED</span></td><td>—</td><td><span class="tag">Traffic</span></td></tr>
+          <tr><td>CASE-2025-1058</td><td>Arun vs Metro Corp</td><td>Arun P., Metro Corp</td><td><span class="status">IN_COURT</span></td><td>Aug 28</td><td><span class="tag">Employment</span></td></tr>
+          <tr><td>CASE-2025-1050</td><td>State vs Aman</td><td>State, Aman T.</td><td><span class="status s-open">OPEN</span></td><td>Sep 04</td><td><span class="tag">Narcotics</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="card">
+        <h2 class="mb-8">Case Spotlight — CASE-2025-1107</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-8"><span class="muted">Lead Lawyer</span><div><strong>A. Lalith Rahul</strong></div></div>
+            <div class="mb-8"><span class="muted">Judge</span><div>Justice Rao</div></div>
+            <div class="mb-8"><span class="muted">Status</span><div><span class="status s-review">UNDER_REVIEW</span></div></div>
+          </div>
+          <div class="col-6">
+            <div class="mb-8"><span class="muted">Court</span><div>High Court</div></div>
+            <div class="mb-8"><span class="muted">Next Hearing</span><div>Aug 18, 2025</div></div>
+            <div class="mb-8"><span class="muted">Tags</span><div><span class="tag">Theft</span> <span class="tag">CCTV</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="mb-8">Latest Timeline</h2>
+        <div class="timeline">
+          <div class="event"><div>Evidence <strong>CCTV_Entrance.mp4</strong> added</div><div class="muted">Inspector • 09:40</div></div>
+          <div class="event"><div>FIR <strong>FIR-08-13-059</strong> linked</div><div class="muted">Inspector • 09:12</div></div>
+          <div class="event"><div>Case created</div><div class="muted">Clerk • 08:58</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
