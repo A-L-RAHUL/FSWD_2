@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Judiciary Platform — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand"><div class="brand-badge"></div> JustiLink</div>
+      <nav class="nav">
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="cases.html">Cases</a>
+        <a href="fir.html">FIR</a>
+        <a href="lawyers.html">Lawyers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title mb-12">Overview</h1>
+    <section class="grid cols-3">
+      <div class="card">
+        <h2>Open Cases <span class="badge">Last 30d</span></h2>
+        <div class="stat"><div class="avatar">OC</div><div>
+          <div class="kpi">128</div><div class="muted">↑ 12% vs prev</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>FIRs Submitted <span class="badge">Today</span></h2>
+        <div class="stat"><div class="avatar">FR</div><div>
+          <div class="kpi">34</div><div class="muted">7 pending verification</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Evidence Uploaded <span class="badge">This week</span></h2>
+        <div class="stat"><div class="avatar">EV</div><div>
+          <div class="kpi">412</div><div class="muted">All integrity checks passed</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="card">
+        <h2 class="mb-8">Recent Case Activity</h2>
+        <div class="timeline">
+          <div class="event"><div><strong>CASE-2025-1107</strong> moved to <span class="status s-review">UNDER_REVIEW</span></div><div class="muted">Judge Rao • 10:14</div></div>
+          <div class="event"><div>Evidence <strong>Forensic_Report.pdf</strong> added</div><div class="muted">SI Mehta • 09:52</div></div>
+          <div class="event"><div>Hearing scheduled <strong>Aug 18, 2025</strong></div><div class="muted">Clerk • 09:10</div></div>
+          <div class="event"><div>FIR <strong>FIR-08-13-057</strong> linked</div><div class="muted">Inspector • 08:45</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="mb-8">My Tasks</h2>
+        <table class="table">
+          <thead><tr><th>Task</th><th>Case</th><th>Due</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Review CCTV footage</td><td>CASE-0981</td><td>Aug 14</td><td><span class="status s-review">In Review</span></td></tr>
+            <tr><td>Draft response</td><td>CASE-1107</td><td>Aug 15</td><td><span class="status s-open">Open</span></td></tr>
+            <tr><td>Client meeting</td><td>CASE-1022</td><td>Aug 16</td><td><span class="status">Scheduled</span></td></tr>
+            <tr><td>Cross-check FIR fields</td><td>FIR-08-13-061</td><td>Aug 16</td><td><span class="status s-open">Open</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section style="margin-top:16px" class="grid cols-3">
+      <div class="card inline"><div class="avatar">QL</div><div><div><strong>Quick Link:</strong> Create Case</div><div class="muted">Start a new case</div></div></div>
+      <div class="card inline"><div class="avatar">EF</div><div><div><strong>Quick Link:</strong> File FIR</div><div class="muted">Submit digital FIR</div></div></div>
+      <div class="card inline"><div class="avatar">SR</div><div><div><strong>Quick Link:</strong> Search Registry</div><div class="muted">Find cases & lawyers</div></div></div>
+    </section>
+  </main>
+</body>
+</html>
